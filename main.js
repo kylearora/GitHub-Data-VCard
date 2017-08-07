@@ -18,7 +18,7 @@ let photo = document.querySelector('.photo')
 
         `;
 
-        bio.innerHTML = `${data.bio}`
-        photo.innerHTML = `<img src=${data.avatar_url}>`;
+      bio.innerHTML = `${data.bio}`
+      photo.innerHTML = `<img src=${data.avatar_url}>`;
 })
 req.send()
