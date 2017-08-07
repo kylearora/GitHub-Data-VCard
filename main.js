@@ -19,10 +19,10 @@ let photo = document.querySelector('.photo')
       info.innerHTML = `
 
     <span class="infoLabels">Name:</span>  ${data.name} <br>
-    <span class="infoLabels">GitHub URL:</span> ${data.login} <br>
-    <span class="infoLabels">Email:</span> kylearora@gmail.com <br>
+    <span class="infoLabels">GitHub URL:</span> <a href="${data.html_url}">${data.login}</a><br>
+    <span class="infoLabels">Email:</span> <a href="mail.to:kylearora@gmail.com">kylearora@gmail.com</a><br>
     <span class="infoLabels">Company:</span>  ${data.company} <br>
-    <span class="infoLabels">Website:</span>  ${data.blog}
+    <span class="infoLabels">Website:</span> <a href="${data.blog}">kylearora.com</a>
 
       `;
 })
